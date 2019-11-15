@@ -598,7 +598,7 @@ static bool match_io_sniff_en(_adapter *adapter
 		else
 			mask &= 0x00000000;
 	}
-	
+
 	if ((sniff->type == RTW_IO_SNIFF_TYPE_EN && (mask & val))
 		|| (sniff->type == RTW_IO_SNIFF_TYPE_DIS && (mask & val) != mask)
 	) {

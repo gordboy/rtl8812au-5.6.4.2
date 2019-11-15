@@ -1343,7 +1343,7 @@ void Hal_EfuseParseKFreeData_8821A(
 
 	HAL_DATA_TYPE	*pHalData = GET_HAL_DATA(Adapter);
 	struct kfree_data_t *kfree_data = &pHalData->kfree_data;
-	u8 pg_pwrtrim = 0xFF, pg_pwrtrim_5g_a = 0xFF, pg_pwrtrim_5g_lb1 = 0xFF, 
+	u8 pg_pwrtrim = 0xFF, pg_pwrtrim_5g_a = 0xFF, pg_pwrtrim_5g_lb1 = 0xFF,
 					pg_pwrtrim_5g_lb2 = 0xFF, pg_pwrtrim_5g_mb1 = 0xFF, pg_pwrtrim_5g_mb2 = 0xFF, pg_pwrtrim_5g_hb = 0xFF, pg_therm = 0xFF;
 
 	if ((Adapter->registrypriv.RegPwrTrimEnable == 1) || !AutoloadFail) {
@@ -5327,7 +5327,7 @@ void GetHwReg8812A(PADAPTER padapter, u8 variable, u8 *pval)
 			*pval = (BIT(0) & val8) ? _TRUE : _FALSE;
 		}
 		break;
-		
+
 	case HW_VAR_AC_PARAM_VO:
 		val32 = rtw_read32(padapter, REG_EDCA_VO_PARAM);
 		pval[0] = val32 & 0xFF;
@@ -5367,7 +5367,7 @@ void GetHwReg8812A(PADAPTER padapter, u8 variable, u8 *pval)
 		#ifdef HAL_EFUSE_MEMORY
 		*pval = pHalData->EfuseHal.BTEfuseUsedPercentage;
 		#endif
-	break;	
+	break;
 	case HW_VAR_EFUSE_BT_BYTES:
 		#ifdef HAL_EFUSE_MEMORY
 		*((u16 *)pval) = pHalData->EfuseHal.BTEfuseUsedBytes;

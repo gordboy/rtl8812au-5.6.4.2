@@ -2113,7 +2113,7 @@ phy_iq_calibrate_8812a(
 )
 {
 	struct dm_struct	*dm = (struct dm_struct *)dm_void;
-	
+
 	_phy_iq_calibrate_8812a(dm, *dm->channel);
 }
 #endif

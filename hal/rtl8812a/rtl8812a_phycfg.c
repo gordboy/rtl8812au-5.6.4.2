@@ -1181,7 +1181,7 @@ phy_SetRFEReg8812(
 			u1tmp = rtw_read8(Adapter, rA_RFE_Inv_Jaguar + 3);
 			rtw_write8(Adapter, rA_RFE_Inv_Jaguar + 3, (u1tmp |= BIT0));
 			phy_set_bb_reg(Adapter, rB_RFE_Inv_Jaguar, bMask_RFEInv_Jaguar, 0x010);
-			break;	
+			break;
 		case 6:
 			phy_set_bb_reg(Adapter, rA_RFE_Pinmux_Jaguar, bMaskDWord, 0x07737717);
 			phy_set_bb_reg(Adapter, rB_RFE_Pinmux_Jaguar, bMaskDWord, 0x07737717);

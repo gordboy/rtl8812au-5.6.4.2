@@ -4884,7 +4884,7 @@ void rx_query_phy_status(
 						precvframe->u.hdr.psta = psta;
 					rx_process_phy_info(padapter, precvframe);
 				}
-			} else 
+			} else
 #endif
 			{
 					if (psta)
