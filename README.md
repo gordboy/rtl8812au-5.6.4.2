@@ -5,6 +5,7 @@
 Only supports 8812AU chipset.
 
 Works fine with 5.3.11 kernel. Source now builds with no warnings or errors.
+Compiles correctly also with 5.4.2 kernel.
 
 Added (cosmeticly edited) original Realtek_Changelog.txt, this README.md and dkms.conf.
 
